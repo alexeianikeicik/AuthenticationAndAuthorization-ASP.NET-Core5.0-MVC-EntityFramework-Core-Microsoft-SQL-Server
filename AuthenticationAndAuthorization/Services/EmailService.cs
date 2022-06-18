@@ -23,7 +23,7 @@ namespace AuthenticationAndAuthorization.Services
             using (var client = new SmtpClient())
             {
                 await client.ConnectAsync("smtp.gmail.com", 465, true);
-                await client.AuthenticateAsync("cr3dostudio@gmail.com", "qfmtuihzyrqdenba");
+                await client.AuthenticateAsync("cr3dostudio@gmail.com", "****");
                 await client.SendAsync(emailMessage);
 
                 await client.DisconnectAsync(true);
